@@ -98,14 +98,17 @@ html {
   text-align: center;
   padding: 4rem 3rem 0rem 3rem;
 }
-.followers_section h2 {
+.followers_section li {
   font-size: 2.5rem;
   color: var(--Verydarkdesaturatedblue);
+  list-style: none;
+  font-weight: bold;
 }
-.followers_section h2 span {
+.followers_section li span {
   color: var(--Darkgray);
   font-weight: 100;
   font-size: 1.8rem;
+  display: block;
 }
 /*end of main section */
 /* footer section */
@@ -125,7 +128,6 @@ html {
     font-size: 60%;
   }
   body {
-    /* we can use background-position: by giving it percentages; */
     background-position: left -100% top 200%, right -100% bottom 200%;
   }
 }
