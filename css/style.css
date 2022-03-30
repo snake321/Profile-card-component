@@ -18,31 +18,28 @@
 }
 body {
   background-color: var(--Darkcyan);
-  width: 100%;
-  min-height: 100vh;
   padding: 0rem 2rem;
   font-family: var(--family);
   background-image: url(../images/bg-pattern-top.svg),
     url(../images/bg-pattern-bottom.svg);
   background-position: right 50vw bottom 50vw, left 50vw top 50vw;
   background-repeat: no-repeat no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* mobile_first */
-html {
-  font-size: 55%;
-}
-/* main section */
 
+/* main section */
+main {
+  flex-grow: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .name {
-  font-size: 2.2rem;
-  margin-top: 2rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
   color: var(--Verydarkdesaturatedblue);
 }
 .name span {
@@ -50,17 +47,17 @@ html {
   font-weight: 100;
 }
 .city {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: var(--Darkgray);
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 100;
 }
 
 .container {
-  max-width: 45rem;
-  width: 37rem;
+  width: 100%;
+  max-width: 22rem;
   background-color: #ffff;
-  padding: 5rem 0rem 3rem 0rem;
+  padding: 3rem 0rem 1.5rem 0rem;
   border-radius: 15px;
   position: relative;
   box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.2);
@@ -86,7 +83,7 @@ html {
 }
 .victor {
   z-index: 1;
-  width: 12rem;
+  width: 6rem;
   border: 7px solid #fff;
   border-radius: 50%;
 }
@@ -96,10 +93,10 @@ html {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  padding: 4rem 3rem 0rem 3rem;
+  padding: 2rem 2rem 0rem 2rem;
 }
 .followers_section li {
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   color: var(--Verydarkdesaturatedblue);
   list-style: none;
   font-weight: bold;
@@ -107,15 +104,17 @@ html {
 .followers_section li span {
   color: var(--Darkgray);
   font-weight: 100;
-  font-size: 1.8rem;
+  font-size: 1rem;
   display: block;
+  margin-top: 0.3rem;
 }
 /*end of main section */
 /* footer section */
+
 .attribution {
   font-size: 20px;
   text-align: center;
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
   color: #fff;
 }
 .attribution a {
@@ -124,9 +123,6 @@ html {
 /* footer section */
 
 @media (min-width: 1440px) {
-  html {
-    font-size: 60%;
-  }
   body {
     background-position: left -100% top 200%, right -100% bottom 200%;
   }
